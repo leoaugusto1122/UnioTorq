@@ -1,0 +1,287 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: U
+        - generic [ref=e9]: Unio Oficina
+      - button "Recolher menu" [ref=e10] [cursor=pointer]
+    - navigation [ref=e13]:
+      - generic [ref=e14]: Operação
+      - button "Kanban" [ref=e15] [cursor=pointer]
+      - button "Exceções" [ref=e22] [cursor=pointer]
+      - button "Atendimentos" [active] [ref=e26] [cursor=pointer]
+      - generic [ref=e30]: Gestão
+      - button "Dashboard" [ref=e31] [cursor=pointer]
+      - button "Painel TV" [ref=e34] [cursor=pointer]
+      - generic [ref=e38]: Cadastros
+      - button "Clientes" [ref=e39] [cursor=pointer]
+      - button "Veículos" [ref=e46] [cursor=pointer]
+      - generic [ref=e52]: IA
+      - button "Agente WhatsApp" [ref=e53] [cursor=pointer]
+      - generic [ref=e57]: Mobile
+      - button "Checklist" [ref=e58] [cursor=pointer]
+      - button "Portal Cliente" [ref=e64] [cursor=pointer]
+      - button "Aprov. Digital" [ref=e69] [cursor=pointer]
+      - button "Configurações" [ref=e75] [cursor=pointer]
+  - generic [ref=e556]:
+    - generic [ref=e557]:
+      - generic [ref=e559]:
+        - generic [ref=e560]: Hub de Atendimento
+        - generic [ref=e562]: 11 atendimentos ativos
+      - button "Novo Atendimento" [ref=e564] [cursor=pointer]
+    - generic [ref=e566]:
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - textbox "Placa, modelo, cliente…" [ref=e570]
+          - generic [ref=e571]:
+            - button "Urgência" [ref=e572] [cursor=pointer]
+            - button "Entrada" [ref=e573] [cursor=pointer]
+            - button "Valor" [ref=e574] [cursor=pointer]
+        - generic [ref=e575]: 11 atendimentos · 3 críticos
+        - generic [ref=e576]:
+          - generic [ref=e577] [cursor=pointer]:
+            - generic [ref=e578]:
+              - generic [ref=e579]:
+                - generic [ref=e580]: BR
+                - generic [ref=e582]: GHI-9012
+              - generic [ref=e583]: Inspeção
+            - generic [ref=e584]:
+              - generic [ref=e585]: Hyundai HB20
+              - generic [ref=e586]: João Lima
+            - generic [ref=e587]: Checklist de Entrada + Filtros
+            - generic [ref=e588]:
+              - generic [ref=e591]: 75%
+              - generic [ref=e592]: R$195
+          - generic [ref=e593] [cursor=pointer]:
+            - generic [ref=e594]:
+              - generic [ref=e595]:
+                - generic [ref=e596]: BR
+                - generic [ref=e598]: DEF-5678
+              - generic [ref=e599]: Ag. Aprov.
+            - generic [ref=e600]:
+              - generic [ref=e601]: Honda Civic
+              - generic [ref=e602]: Maria Santos
+            - generic [ref=e603]: Suspensão + Alinhamento 3D
+            - generic [ref=e604]:
+              - generic [ref=e607]: 33%
+              - generic [ref=e608]: R$620
+          - generic [ref=e609] [cursor=pointer]:
+            - generic [ref=e610]:
+              - generic [ref=e611]:
+                - generic [ref=e612]: BR
+                - generic [ref=e614]: PQR-2345
+              - generic [ref=e615]: Executando
+            - generic [ref=e616]:
+              - generic [ref=e617]: Chevrolet Onix
+              - generic [ref=e618]: Carlos Mendes
+            - generic [ref=e619]: Elétrica — Módulo BCM
+            - generic [ref=e620]:
+              - generic [ref=e623]: 100%
+              - generic [ref=e624]: R$340
+          - generic [ref=e625] [cursor=pointer]:
+            - generic [ref=e626]:
+              - generic [ref=e627]:
+                - generic [ref=e628]: BR
+                - generic [ref=e630]: XYZ-9876
+              - generic [ref=e631]: Executando
+            - generic [ref=e632]:
+              - generic [ref=e633]: Jeep Compass
+              - generic [ref=e634]: Pedro Alves
+            - generic [ref=e635]: Pastilha + Disco Freio Diant.
+            - generic [ref=e636]:
+              - generic [ref=e639]: 68%
+              - generic [ref=e640]: R$505
+          - generic [ref=e641] [cursor=pointer]:
+            - generic [ref=e642]:
+              - generic [ref=e643]:
+                - generic [ref=e644]: BR
+                - generic [ref=e646]: UVW-2345
+              - generic [ref=e647]: Ctrl. Qual.
+            - generic [ref=e648]:
+              - generic [ref=e649]: Nissan Kicks
+              - generic [ref=e650]: Patrícia Nunes
+            - generic [ref=e651]: Revisão 30k + Alinhamento
+            - generic [ref=e652]:
+              - generic [ref=e655]: 98%
+              - generic [ref=e656]: R$480
+          - generic [ref=e657] [cursor=pointer]:
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - generic [ref=e660]: BR
+                - generic [ref=e662]: STU-6789
+              - generic [ref=e663]: Pronto
+            - generic [ref=e664]:
+              - generic [ref=e665]: Renault Sandero
+              - generic [ref=e666]: Fernanda Lima
+            - generic [ref=e667]: Revisão Completa 30k km
+            - generic [ref=e668]:
+              - generic [ref=e671]: 100%
+              - generic [ref=e672]: R$680
+          - generic [ref=e673] [cursor=pointer]:
+            - generic [ref=e674]:
+              - generic [ref=e675]:
+                - generic [ref=e676]: BR
+                - generic [ref=e678]: MNO-7890
+              - generic [ref=e679]: Recebido
+            - generic [ref=e680]:
+              - generic [ref=e681]: Fiat Argo
+              - generic [ref=e682]: Luciana Costa
+            - generic [ref=e683]: Revisão 10k + Troca de Óleo
+            - generic [ref=e684]:
+              - generic [ref=e687]: 11%
+              - generic [ref=e688]: R$280
+          - generic [ref=e689] [cursor=pointer]:
+            - generic [ref=e690]:
+              - generic [ref=e691]:
+                - generic [ref=e692]: BR
+                - generic [ref=e694]: LMN-4567
+              - generic [ref=e695]: Recebido
+            - generic [ref=e696]:
+              - generic [ref=e697]: Fiat Pulse
+              - generic [ref=e698]: Rodrigo Braga
+            - generic [ref=e699]: Revisão de Entrada
+            - generic [ref=e700]:
+              - generic [ref=e703]: 3%
+              - generic [ref=e704]: R$160
+          - generic [ref=e705] [cursor=pointer]:
+            - generic [ref=e706]:
+              - generic [ref=e707]:
+                - generic [ref=e708]: BR
+                - generic [ref=e710]: ABC-1234
+              - generic [ref=e711]: Ag. Aprov.
+            - generic [ref=e712]:
+              - generic [ref=e713]: Toyota Corolla
+              - generic [ref=e714]: Ana Souza
+            - generic [ref=e715]: Sistema de Freios Completo
+            - generic [ref=e716]:
+              - generic [ref=e719]: 100%
+              - generic [ref=e720]: R$485
+          - generic [ref=e721] [cursor=pointer]:
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - generic [ref=e724]: BR
+                - generic [ref=e726]: RST-8901
+              - generic [ref=e727]: Ag. Peças
+            - generic [ref=e728]:
+              - generic [ref=e729]: Mitsubishi Outlander
+              - generic [ref=e730]: Marcos Silva
+            - generic [ref=e731]: Troca Amortecedor + Correia
+            - generic [ref=e732]:
+              - generic [ref=e735]: 67%
+              - generic [ref=e736]: R$920
+          - generic [ref=e737] [cursor=pointer]:
+            - generic [ref=e738]:
+              - generic [ref=e739]:
+                - generic [ref=e740]: BR
+                - generic [ref=e742]: JKL-3456
+              - generic [ref=e743]: Aprovado
+            - generic [ref=e744]:
+              - generic [ref=e745]: Volkswagen Jetta
+              - generic [ref=e746]: Roberto Melo
+            - generic [ref=e747]: Substituição Cabeçote Motor
+            - generic [ref=e748]:
+              - generic [ref=e751]: 54%
+              - generic [ref=e752]: R$1840
+        - button "Novo Atendimento" [ref=e754] [cursor=pointer]
+      - generic [ref=e757]:
+        - generic [ref=e758]:
+          - generic [ref=e759]:
+            - generic [ref=e760]:
+              - generic [ref=e761]:
+                - generic [ref=e762]: BR
+                - generic [ref=e764]: XYZ-9876
+              - generic [ref=e765]:
+                - generic [ref=e766]:
+                  - generic [ref=e767]: Jeep Compass 2022
+                  - generic [ref=e768]: Em Execução
+                - generic [ref=e770]: Preto Melanine · 1.3 Turbo Flex · 28.300 km
+                - generic [ref=e771]:
+                  - generic [ref=e772]: Pedro Alves
+                  - generic [ref=e778]: (11) 91234-5678
+            - generic [ref=e779]:
+              - generic [ref=e780]: 1:32:45
+              - button "Enviar Orçamento" [ref=e783] [cursor=pointer]
+              - button "WhatsApp" [ref=e786] [cursor=pointer]
+              - button "OS" [ref=e789] [cursor=pointer]
+          - generic [ref=e793]:
+            - generic [ref=e794]:
+              - generic [ref=e795]: OS
+              - text: OS-2024-0891
+            - generic [ref=e796]:
+              - generic [ref=e797]: Entrada
+              - text: 06:00
+            - generic [ref=e798]:
+              - generic [ref=e799]: Previsão
+              - text: 12:00
+            - generic [ref=e800]:
+              - generic [ref=e801]: Mecânico
+              - text: Carlos
+            - generic [ref=e802]:
+              - generic [ref=e803]: Consultor
+              - text: Yuri
+            - generic [ref=e804]:
+              - generic [ref=e805]: Total
+              - text: R$ 504.90
+        - generic [ref=e806]:
+          - generic [ref=e808]: Cronômetro em execução — Carlos no OS-2024-0891
+          - generic [ref=e809]: 1:32:45
+        - generic [ref=e810]:
+          - button "Geral" [ref=e811] [cursor=pointer]
+          - button "Timeline" [ref=e815] [cursor=pointer]
+          - button "Inspeção 2" [ref=e818] [cursor=pointer]:
+            - text: Inspeção
+            - generic [ref=e823]: "2"
+          - button "Orçamento" [ref=e824] [cursor=pointer]
+          - button "Comunicação 2" [ref=e828] [cursor=pointer]:
+            - text: Comunicação
+            - generic [ref=e831]: "2"
+          - button "Financeiro" [ref=e832] [cursor=pointer]
+        - generic [ref=e835]:
+          - generic [ref=e836]:
+            - generic [ref=e837]: Relato do Problema
+            - generic [ref=e840]: Cliente relatou ruído ao frear, principalmente em descidas. Sensação de vibração no pedal de freio em alta velocidade.
+          - generic [ref=e843]:
+            - generic [ref=e844]: Observações Técnicas
+            - generic [ref=e847]: Veículo chegou com 28.300 km. Última revisão há 8.300 km na concessionária. Cliente pediu para verificar também o filtro de cabine.
+          - generic [ref=e850]: Dados do Atendimento
+          - generic [ref=e853]:
+            - generic [ref=e854]:
+              - generic [ref=e855]: OS
+              - generic [ref=e856]: OS-2024-0891
+            - generic [ref=e857]:
+              - generic [ref=e858]: Status
+              - generic [ref=e859]: Em Execução
+            - generic [ref=e862]:
+              - generic [ref=e863]: Entrada
+              - generic [ref=e864]: 06:00
+            - generic [ref=e865]:
+              - generic [ref=e866]: Previsão
+              - generic [ref=e867]: 12:00
+            - generic [ref=e868]:
+              - generic [ref=e869]: Mecânico
+              - generic [ref=e871]:
+                - generic [ref=e872]: CF
+                - generic [ref=e873]: Carlos Ferreira · Sênior
+            - generic [ref=e874]:
+              - generic [ref=e875]: Consultor
+              - generic [ref=e877]:
+                - generic [ref=e878]: YP
+                - generic [ref=e879]: Yuri Prado
+            - generic [ref=e880]:
+              - generic [ref=e881]: Veículo
+              - generic [ref=e882]: Jeep Compass 2022
+            - generic [ref=e883]:
+              - generic [ref=e884]: Cor / Motor
+              - generic [ref=e885]: Preto Melanine · 1.3 Turbo Flex
+            - generic [ref=e886]:
+              - generic [ref=e887]: KM Atual
+              - generic [ref=e888]: 28.300 km
+            - generic [ref=e889]:
+              - generic [ref=e890]: Cliente
+              - generic [ref=e891]: Pedro Alves
+            - generic [ref=e892]:
+              - generic [ref=e893]: Telefone
+              - generic [ref=e894]: (11) 91234-5678
+            - generic [ref=e895]:
+              - generic [ref=e896]: CPF
+              - generic [ref=e897]: 987.654.321-00

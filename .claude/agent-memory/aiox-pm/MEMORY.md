@@ -1,0 +1,1 @@
+- [UnioSlotIA como validação do UnioTorq](project-unioslotia-validacao.md) — micro-SaaS piloto (psicólogo Alessandro) para testar a arquitetura agêntica antes do produto grande

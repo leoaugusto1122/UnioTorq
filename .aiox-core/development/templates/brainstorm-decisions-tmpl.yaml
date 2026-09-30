@@ -1,0 +1,75 @@
+---
+brainstorm_session_decisions:
+  session_id: "{YYYY-MM-DD}-{tema}"
+  date: "{YYYY-MM-DD}"
+  facilitator: "@brainstorm"
+  documented_at: "{ISO-8601 timestamp}"
+
+  metadata:
+    title: "{Tema do Brainstorm}"
+    scope: "{MVP | Full-Feature | Research-Only}"
+    participants:
+      human: "{nome}"
+      agents: ["@pm", "@po", "@analyst", "@architect"]
+
+  decisions:
+    - id: "DEC-001"
+      statement: "{Decisão clara}"
+      description: |
+        Descrição detalhada da decisão tomada.
+        Por que foi tomada, contexto, etc.
+
+      rationale: |
+        Justificativa baseada em:
+        - Feedback do @pm (estratégia)
+        - Feedback do @po (valor)
+        - Feedback do @analyst (market)
+        - Feedback do @architect (viabilidade)
+
+      approved_by:
+        - "@pm"
+        - "@po"
+        - "@analyst"
+        - "@architect"
+
+      impact:
+        development_effort: "{X story points}"
+        timeline: "{X weeks}"
+        team_size: "{X developers}"
+        other_impacts: []
+
+      risks:
+        - severity: "HIGH"
+          description: "{risk}"
+          mitigation: "{como mitigar}"
+        - severity: "MEDIUM"
+          description: "{risk}"
+          mitigation: "{como mitigar}"
+
+      dependencies:
+        - system: "{sistema afetado}"
+          impact: "{tipo de impacto}"
+        - system: "{sistema afetado}"
+          impact: "{tipo de impacto}"
+
+      assumptions:
+        - "{assumção 1}"
+        - "{assumção 2}"
+
+      alternatives_considered:
+        - option: "{alternativa}"
+          pros: []
+          cons: []
+          why_rejected: "{razão da rejeição}"
+
+      next_action: "{próximo passo}"
+      handoff_to: "{agent}"
+      timestamp: "{ISO-8601}"
+
+  approval_summary:
+    total_decisions: "X"
+    approved: "Y"
+    conditional: "Z"
+    rejected: "0"
+
+  session_outcome: "APPROVED | CONDITIONAL | REJECTED"

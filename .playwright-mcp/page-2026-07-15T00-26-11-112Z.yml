@@ -1,0 +1,38 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "U" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f1e6]: Unio Oficina
+      - button "Recolher" [ref=f1e7]
+    - navigation [ref=f1e10]:
+      - generic [ref=f1e11]:
+        - generic [ref=f1e12]: Operação
+        - generic [ref=f1e13]:
+          - generic "Kanban (em breve)" [ref=f1e14]: Kanbanem breve
+          - generic "Exceções (em breve)" [ref=f1e20]: Exceçõesem breve
+          - link "Atendimentos" [ref=f1e23] [cursor=pointer]:
+            - /url: /hub
+      - generic [ref=f1e26]:
+        - generic [ref=f1e27]: Gestão
+        - generic [ref=f1e28]:
+          - generic "Dashboard (em breve)" [ref=f1e29]: Dashboardem breve
+          - generic "Painel TV (em breve)" [ref=f1e32]: Painel TVem breve
+      - generic [ref=f1e35]:
+        - generic [ref=f1e36]: Cadastros
+        - generic [ref=f1e37]:
+          - generic "Clientes (em breve)" [ref=f1e38]: Clientesem breve
+          - generic "Veículos (em breve)" [ref=f1e44]: Veículosem breve
+      - generic [ref=f1e49]:
+        - generic [ref=f1e50]: IA
+        - link "Agente WhatsApp" [ref=f1e52] [cursor=pointer]:
+          - /url: /nina
+      - generic [ref=f1e55]:
+        - generic [ref=f1e56]: Mobile
+        - generic [ref=f1e57]:
+          - generic "Checklist (em breve)" [ref=f1e58]: Checklistem breve
+          - generic "Portal Cliente (em breve)" [ref=f1e63]: Portal Clienteem breve
+          - generic "Aprov. Digital (em breve)" [ref=f1e67]: Aprov. Digitalem breve
+    - generic "Configurações (em breve)" [ref=f1e72]: Configuraçõesem breve
+  - main [ref=f1e76]:
+    - generic [ref=f1e77]: Carregando…

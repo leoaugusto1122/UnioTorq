@@ -1,0 +1,1 @@
+- [Micro-SaaS agendamento + financeiro](project_agenda-financeiro-microsaas.md) — dashboard web/PWA para profissionais liberais, complementar ao agendamento por WhatsApp com IA

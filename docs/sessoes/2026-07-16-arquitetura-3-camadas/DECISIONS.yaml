@@ -1,0 +1,132 @@
+---
+brainstorm_session_decisions:
+  session_id: "2026-07-16-arquitetura-3-camadas"
+  date: "2026-07-16"
+  facilitator: "@aiox-master (Orion, atuando como @brainstorm)"
+  documented_at: "2026-07-16T16:32:20-03:00"
+
+  metadata:
+    title: "Arquitetura de IA em 3 Camadas + Funcionários Digitais"
+    scope: "Research-Only"
+    participants:
+      human: "Leonardo"
+      agents: ["@pm (síntese)", "@po (síntese)", "@analyst (síntese)", "@architect (síntese)"]
+
+  decisions:
+    - id: "DEC-001"
+      statement: "Adotar arquitetura de execução em 3 camadas — Regras (0 token) -> Automação (0 token) -> IA (só interpretação/geração), com o princípio 'IA por último, não por primeiro'."
+      description: |
+        Todo evento do sistema passa por um roteador que decide a camada ANTES de
+        gastar token. Camada 1 = fatos/cálculos determinísticos (SQL/regra). Camada 2 =
+        workflows disparados por evento. Camada 3 = IA, só quando é preciso interpretar
+        ou gerar. Manifesto: repetitivo -> automatizado; interpretação -> assistida por
+        IA; decisão crítica -> humana. Formalizado em docs/adr/ADR-001.
+      rationale: |
+        - @pm: reframe estrategicamente superior; alinha com "o agente é o sistema".
+        - @po: torna o custo controlável e a proposta de valor tangível.
+        - @analyst: padrão validado (Tekion); custo de IA como diferencial de margem.
+        - @architect: arquitetura que escala; IA deixa de ser lógica de negócio.
+      approved_by: ["@pm", "@po", "@analyst", "@architect", "Leonardo"]
+      impact:
+        development_effort: "Decisão de arquitetura (0 código nesta fase)"
+        timeline: "Imediata; patch docs 06/15 em seguida"
+        team_size: "n/a"
+        other_impacts:
+          - "Cria necessidade de tabela de roteamento de eventos (novo artefato)"
+          - "Cria necessidade de observabilidade de custo por camada"
+      risks:
+        - severity: "HIGH"
+          description: "IA voltar a ser usada como lógica de negócio"
+          mitigation: "Regra de ouro (doc 17) + revisão de classificação Nível 1/2/3 por feature"
+        - severity: "MEDIUM"
+          description: "Hipótese econômica (custo de IA baixo) não confirmada"
+          mitigation: "Métrica custo de IA como % da receita; validar no piloto (doc 10)"
+      dependencies:
+        - system: "Orquestrador de IA (doc 15)"
+          impact: "Ganha portão de camada a montante"
+        - system: "Motor de regras/automação (doc 06)"
+          impact: "Passa a ser explicitamente a Camada 1 e 2"
+      assumptions:
+        - "A maior parte dos eventos operacionais é resolvível por regra/SQL"
+        - "Roteamento de modelo por skill mantém qualidade sem estourar custo"
+      alternatives_considered:
+        - option: "8 agentes autônomos decidindo tudo com IA"
+          pros: ["Simples de descrever"]
+          cons: ["Custo alto", "Latência", "Decisão probabilística em cálculo/financeiro"]
+          why_rejected: "Insustentável em custo e posicionamento fraco"
+      next_action: "Retomar debate com o humano; depois patch docs 06/15"
+      handoff_to: "Orion (debate) -> @pm (specification)"
+      timestamp: "2026-07-16T16:32:20-03:00"
+
+    - id: "DEC-002"
+      statement: "Consolidar o portfólio como 'Funcionários Digitais' com spec de 7 perguntas por agente, organizados por objetivo — não como '8 agentes de IA'."
+      description: |
+        Cada funcionário digital responde: objetivo, problema, economia, camada
+        dominante, dados consultados, ações automáticas, ações que exigem aprovação,
+        ROI. Consolidado em docs/17-funcionarios-digitais.md. O framing 'por objetivo'
+        (ChatGPT) foi adotado como LENTE comercial; o portfólio técnico permanece o de
+        doc 05 (não reaberto).
+      rationale: |
+        - @po: proposta de valor tangível — a oficina vê exatamente pelo que paga.
+        - @pm: "SO Inteligente / equipe digital" > "chatbot".
+      approved_by: ["@pm", "@po", "Leonardo"]
+      impact:
+        development_effort: "Doc (0 código)"
+        timeline: "Imediata"
+        team_size: "n/a"
+        other_impacts: ["Base para specification e pricing por add-on (doc 05/15)"]
+      risks:
+        - severity: "LOW"
+          description: "Divergência entre naming comercial (objetivo) e skills técnicas (papel)"
+          mitigation: "Doc 17 mantém ambos: objetivo como lente, skill técnica como implementação"
+      dependencies:
+        - system: "Portfólio de agentes (doc 05)"
+          impact: "Consolidação, sem reabrir decisões"
+      assumptions:
+        - "Os 8 papéis de doc 05 cobrem os objetivos comerciais atuais"
+      alternatives_considered:
+        - option: "Reorganizar tecnicamente por objetivo (Conversão/Retenção/etc.)"
+          pros: ["Narrativa comercial limpa"]
+          cons: ["Reabriria portfólio já decidido"]
+          why_rejected: "Tecnicamente são skills no mesmo motor; objetivo é lente, não arquitetura"
+      next_action: "Usar doc 17 como base da specification"
+      handoff_to: "@pm"
+      timestamp: "2026-07-16T16:32:20-03:00"
+
+    - id: "DEC-003"
+      statement: "Aplicar 4 correções técnicas ao modelo proposto externamente."
+      description: |
+        (1) Roteamento de modelo POR SKILL, não modelo único (mantém 15 §3a).
+        (2) O portão 'precisa de IA?' é regra declarativa por tipo de evento, NUNCA
+        uma chamada de LLM. (3) Nenhum agente é módulo/menu na UI operacional;
+        exceções propositais: WhatsApp e chat do Gestor. (4) Percentuais (99%/5%) são
+        princípio direcional, não métrica contratual.
+      rationale: |
+        - @architect: preservam decisões corretas já existentes e evitam armadilhas
+          (custo, latência, perda de qualidade).
+      approved_by: ["@architect", "Leonardo"]
+      impact:
+        development_effort: "Registrado como cláusulas do ADR-001"
+        timeline: "Imediata"
+        team_size: "n/a"
+        other_impacts: []
+      risks:
+        - severity: "MEDIUM"
+          description: "Regressão para 'um modelo só' por simplicidade de implementação"
+          mitigation: "Cláusula 1 explícita no ADR-001"
+      dependencies:
+        - system: "Doc 15 (roteamento e admin)"
+          impact: "Confirmado, não alterado"
+      assumptions: []
+      alternatives_considered: []
+      next_action: "Refletir cláusulas no patch de docs 06/15"
+      handoff_to: "@architect"
+      timestamp: "2026-07-16T16:32:20-03:00"
+
+  approval_summary:
+    total_decisions: "3"
+    approved: "3"
+    conditional: "0"
+    rejected: "0"
+
+  session_outcome: "APPROVED"

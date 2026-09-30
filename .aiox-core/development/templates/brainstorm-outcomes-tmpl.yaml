@@ -1,0 +1,161 @@
+---
+brainstorm_session_outcomes:
+  session_id: "{YYYY-MM-DD}-{tema}"
+  date: "{YYYY-MM-DD}"
+  facilitator: "@brainstorm"
+  documented_at: "{ISO-8601 timestamp}"
+
+  metadata:
+    title: "{Tema do Brainstorm}"
+    scope: "{MVP | Full-Feature | Research-Only}"
+    approved_scope: "{MVP | Full-Feature | Research-Only}"
+    human: "{nome}"
+
+  epics_created:
+    - id: "EPIC-{numero}"
+      title: "{Título do Epic}"
+      description: |
+        Descrição do Epic derivado do brainstorm.
+        Contexto, motivação, escopo.
+
+      business_value: |
+        - Reduz tempo de {atividade} em {X%}
+        - Melhora {métrica} para {usuário}
+        - Alinha com visão de {visão}
+
+      acceptance_criteria:
+        - "{AC 1}"
+        - "{AC 2}"
+        - "{AC 3}"
+
+      scope:
+        in_scope:
+          - "{feature}"
+          - "{feature}"
+        out_of_scope:
+          - "{feature}"
+          - "{feature}"
+
+      estimated_effort: "{X story points}"
+      timeline: "{X weeks}"
+      risks: []
+
+      created_from_brainstorm:
+        session_id: "{session-id}"
+        decision_id: "DEC-001"
+        timestamp: "{ISO-8601}"
+
+  stories_created:
+    - id: "{epic-id}.{story-id}"
+      title: "Como {persona}, {action}, para {benefit}"
+      description: |
+        Descrição detalhada da story.
+
+      acceptance_criteria:
+        - "Given {contexto}, When {ação}, Then {resultado}"
+        - "Given {contexto}, When {ação}, Then {resultado}"
+
+      estimate: "{X story points}"
+      priority: "HIGH | MEDIUM | LOW"
+      complexity: "SIMPLE | MEDIUM | COMPLEX"
+
+      dependencies:
+        - story_id: "{outro story}"
+          type: "blocks | depends_on | related_to"
+
+      user_impact:
+        personas: ["{persona 1}", "{persona 2}"]
+        use_cases: ["{use case}"]
+        metrics: ["métrica para medir sucesso"]
+
+      technical_notes: |
+        - Afeta {sistema}
+        - Integra com {API/serviço}
+        - Requer {tecnologia}
+
+      created_from_brainstorm:
+        session_id: "{session-id}"
+        outcome_id: "{outcome-id}"
+        timestamp: "{ISO-8601}"
+
+  features_identified:
+    - id: "F-{numero}"
+      name: "{Nome da feature}"
+      description: |
+        Descrição clara da feature.
+
+      user_benefit: |
+        Como o usuário se beneficia:
+        - Benefício 1
+        - Benefício 2
+
+      acceptance_criteria:
+        - "{AC 1}"
+        - "{AC 2}"
+
+      scope: "MVP | BACKLOG | FUTURE"
+      priority: "HIGH | MEDIUM | LOW"
+
+      technical_complexity: "LOW | MEDIUM | HIGH"
+      dependencies: []
+
+      created_from_brainstorm:
+        session_id: "{session-id}"
+        decision_id: "DEC-001"
+
+  risks_identified:
+    - id: "RISK-{numero}"
+      description: "{Descrição do risco}"
+      severity: "CRITICAL | HIGH | MEDIUM | LOW"
+      probability: "HIGH | MEDIUM | LOW"
+      impact: |
+        - {impacto 1}
+        - {impacto 2}
+
+      mitigation_strategy: |
+        - {estratégia 1}
+        - {estratégia 2}
+
+      owner: "{agent ou pessoa}"
+      status: "NEW | MONITORING | MITIGATED"
+
+  assumptions_made:
+    - assumption: "{Assunção 1}"
+      validated_by: ["@pm", "@analyst"]
+      validation_status: "VALIDATED | NEEDS_VALIDATION | REJECTED"
+
+  deliverables:
+    artifacts_created:
+      - type: "story"
+        path: "{docs/stories/epics/XX/YY.story.md}"
+        status: "created"
+      - type: "epic"
+        path: "{docs/stories/epics/XX/INDEX.md}"
+        status: "created"
+      - type: "decision"
+        path: "{.aiox/decisions/YYYY-MM-DD-tema-DECISION.md}"
+        status: "created"
+
+  next_phase:
+    phase: "{specification | planning | development}"
+    responsible_agent: "@pm"
+    handoff_timestamp: "{ISO-8601}"
+    handoff_notes: |
+      - {nota 1}
+      - {nota 2}
+
+  session_statistics:
+    total_decisions_made: "X"
+    features_identified: "X"
+    stories_created: "X"
+    epics_created: "X"
+    risks_identified: "X"
+    duration_minutes: "X"
+    conversation_turns: "X"
+
+  success_metrics:
+    definition_clarity: "HIGH | MEDIUM | LOW"
+    stakeholder_alignment: "FULL | PARTIAL | NEEDS_WORK"
+    technical_feasibility: "CONFIRMED | CONDITIONAL | RISKY"
+    market_validation: "STRONG | MODERATE | WEAK"
+    recommended_action: "PROCEED | CONDITIONAL_GO | REJECT"

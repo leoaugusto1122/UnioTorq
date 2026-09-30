@@ -1,0 +1,84 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: U
+        - generic [ref=e9]: Unio Oficina
+      - button "Recolher menu" [ref=e10] [cursor=pointer]
+    - navigation [ref=e13]:
+      - generic [ref=e14]: Operação
+      - button "Kanban" [ref=e15] [cursor=pointer]
+      - button "Exceções" [ref=e22] [cursor=pointer]
+      - button "Atendimentos" [ref=e26] [cursor=pointer]
+      - generic [ref=e30]: Gestão
+      - button "Dashboard" [ref=e31] [cursor=pointer]
+      - button "Painel TV" [ref=e34] [cursor=pointer]
+      - generic [ref=e38]: Cadastros
+      - button "Clientes" [ref=e39] [cursor=pointer]
+      - button "Veículos" [ref=e46] [cursor=pointer]
+      - generic [ref=e52]: IA
+      - button "Agente WhatsApp" [ref=e53] [cursor=pointer]
+      - generic [ref=e57]: Mobile
+      - button "Checklist" [ref=e58] [cursor=pointer]
+      - button "Portal Cliente" [active] [ref=e64] [cursor=pointer]
+      - button "Aprov. Digital" [ref=e69] [cursor=pointer]
+      - button "Configurações" [ref=e75] [cursor=pointer]
+  - generic [ref=e898]:
+    - generic [ref=e901]:
+      - generic [ref=e902]: Portal do Cliente
+      - generic [ref=e904]: Mobile Web · Sem login
+    - generic [ref=e906]:
+      - generic [ref=e907]: Cliente · Link via WhatsApp
+      - generic [ref=e908]:
+        - generic [ref=e909]:
+          - generic [ref=e910]: 09:41
+          - generic [ref=e911]:
+            - generic [ref=e912]: ▐▐▐▐
+            - generic [ref=e913]: WiFi
+            - generic [ref=e914]: 🔋
+        - generic [ref=e916]:
+          - generic [ref=e917]:
+            - generic [ref=e918]: U
+            - generic [ref=e919]:
+              - generic [ref=e920]: Unio Oficina
+              - generic [ref=e921]: Acompanhamento em tempo real
+          - generic [ref=e925]:
+            - generic [ref=e926]:
+              - generic [ref=e927]:
+                - generic [ref=e928]: BR
+                - generic [ref=e930]: XYZ-9876
+              - generic [ref=e931]:
+                - generic [ref=e932]: Jeep Compass 2022
+                - generic [ref=e933]: Carlos · Prev. 12:00
+            - generic [ref=e934]: Execução
+          - generic [ref=e936]:
+            - button "Status" [ref=e937] [cursor=pointer]
+            - button "Fotos" [ref=e941] [cursor=pointer]
+            - button "Histórico" [ref=e946] [cursor=pointer]
+            - button "Docs" [ref=e949] [cursor=pointer]
+          - generic [ref=e955]:
+            - generic [ref=e956]: Status do veículo
+            - generic [ref=e964]:
+              - generic [ref=e965]: Recebido
+              - generic [ref=e966]: 06:00
+            - generic [ref=e974]:
+              - generic [ref=e975]: Inspeção
+              - generic [ref=e976]: 06:15
+            - generic [ref=e984]:
+              - generic [ref=e985]: Aprovação
+              - generic [ref=e986]: 07:33
+            - generic [ref=e993]:
+              - generic [ref=e994]:
+                - generic [ref=e995]: Em Execução
+                - generic [ref=e996]: 07:35
+              - generic [ref=e997]: Agora
+            - generic [ref=e999]:
+              - generic [ref=e1000]: ○
+              - generic [ref=e1005]:
+                - generic [ref=e1006]: Finalizado
+                - generic [ref=e1007]: —
+            - generic [ref=e1008]:
+              - generic [ref=e1009]: ○
+              - generic [ref=e1013]:
+                - generic [ref=e1014]: Entregue
+                - generic [ref=e1015]: —

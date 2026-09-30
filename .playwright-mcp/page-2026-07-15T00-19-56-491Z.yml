@@ -1,0 +1,184 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: U
+        - generic [ref=e9]: Unio Oficina
+      - button "Recolher menu" [ref=e10] [cursor=pointer]
+    - navigation [ref=e13]:
+      - generic [ref=e14]: Operação
+      - button "Kanban" [ref=e15] [cursor=pointer]
+      - button "Exceções" [ref=e22] [cursor=pointer]
+      - button "Atendimentos" [ref=e26] [cursor=pointer]
+      - generic [ref=e30]: Gestão
+      - button "Dashboard" [ref=e31] [cursor=pointer]
+      - button "Painel TV" [ref=e34] [cursor=pointer]
+      - generic [ref=e38]: Cadastros
+      - button "Clientes" [ref=e39] [cursor=pointer]
+      - button "Veículos" [ref=e46] [cursor=pointer]
+      - generic [ref=e52]: IA
+      - button "Agente WhatsApp" [ref=e53] [cursor=pointer]
+      - generic [ref=e57]: Mobile
+      - button "Checklist" [ref=e58] [cursor=pointer]
+      - button "Portal Cliente" [ref=e64] [cursor=pointer]
+      - button "Aprov. Digital" [active] [ref=e69] [cursor=pointer]
+      - button "Configurações" [ref=e75] [cursor=pointer]
+  - generic [ref=e1016]:
+    - generic [ref=e1019]:
+      - generic [ref=e1020]: Aprovação Digital
+      - generic [ref=e1022]: Diagnóstico inteligente · Link WhatsApp
+    - generic [ref=e1024]:
+      - generic [ref=e1025]: Cliente · Aprovação Digital Inteligente
+      - generic [ref=e1026]:
+        - generic [ref=e1027]:
+          - generic [ref=e1028]: 09:41
+          - generic [ref=e1029]:
+            - generic [ref=e1030]: ▐▐▐▐
+            - generic [ref=e1031]: WiFi
+            - generic [ref=e1032]: 🔋
+        - generic [ref=e1034]:
+          - generic [ref=e1035]:
+            - generic [ref=e1036]: U
+            - generic [ref=e1037]:
+              - generic [ref=e1038]: Diagnóstico do seu veículo
+              - generic [ref=e1039]: Unio Oficina · Link privado
+            - generic [ref=e1040]: Ag. Aprovação
+          - generic [ref=e1042]:
+            - generic [ref=e1043]:
+              - generic [ref=e1044]:
+                - generic [ref=e1045]: BR
+                - generic [ref=e1047]: XYZ-9876
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: Jeep Compass 2022
+                - generic [ref=e1050]: Pedro Alves · OS-2024-0891
+            - generic [ref=e1051]:
+              - generic [ref=e1052]: Recebido
+              - generic [ref=e1058]: Inspeção
+              - generic [ref=e1064]: Aprovação
+              - generic [ref=e1069]: Execução
+              - generic [ref=e1073]: Entrega
+          - generic [ref=e1076]:
+            - button "Diagnóstico" [ref=e1077] [cursor=pointer]
+            - button "Resumo" [ref=e1081] [cursor=pointer]
+            - button "Autorizar" [ref=e1085] [cursor=pointer]
+          - generic [ref=e1090]:
+            - generic [ref=e1091]:
+              - generic [ref=e1092]:
+                - generic [ref=e1093]: "11"
+                - generic [ref=e1094]: Avaliados
+              - generic [ref=e1095]:
+                - generic [ref=e1096]: "2"
+                - generic [ref=e1097]: Críticos
+              - generic [ref=e1098]:
+                - generic [ref=e1099]: "4"
+                - generic [ref=e1100]: Atenção
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: "5"
+                - generic [ref=e1103]: Conformes
+            - generic [ref=e1104]:
+              - generic [ref=e1105]:
+                - generic [ref=e1106]:
+                  - generic [ref=e1107]: Pastilha Dianteira
+                  - generic [ref=e1108]: CRÍTICO
+                - generic [ref=e1109]: → Troca imediata — segurança comprometida
+                - generic [ref=e1110]: Compromete a distância de frenagem do veículo
+              - generic [ref=e1111]:
+                - generic [ref=e1112]: Observação do mecânico
+                - generic [ref=e1113]: "\"Desgaste inferior a 2mm. Abaixo do limite mínimo de segurança estabelecido pelo fabricante.\""
+                - button "2 fotos" [ref=e1114] [cursor=pointer]
+              - generic [ref=e1120]:
+                - generic [ref=e1121]: Orçamento do item
+                - generic [ref=e1122]:
+                  - generic [ref=e1123]:
+                    - generic [ref=e1124]: Pastilha Cerâmica Bosch BP1302
+                    - generic [ref=e1125]: R$ 180
+                  - generic [ref=e1126]:
+                    - generic [ref=e1127]: Troca de Pastilha Dianteira · 1h
+                    - generic [ref=e1128]: R$ 120
+                  - generic [ref=e1129]:
+                    - generic [ref=e1130]: Total
+                    - generic [ref=e1131]: R$ 300
+              - button "O que acontece se não realizar?" [ref=e1133] [cursor=pointer]
+              - generic [ref=e1138]:
+                - button "✓ Aprovar" [ref=e1139] [cursor=pointer]
+                - button "✕ Recusar" [ref=e1140] [cursor=pointer]
+            - generic [ref=e1141]:
+              - generic [ref=e1142]:
+                - generic [ref=e1143]:
+                  - generic [ref=e1144]: Disco de Freio Dianteiro
+                  - generic [ref=e1145]: CRÍTICO
+                - generic [ref=e1146]: → Retífica urgente
+                - generic [ref=e1147]: Vibração e perda de eficiência nas frenagens
+              - generic [ref=e1148]:
+                - generic [ref=e1149]: Observação do mecânico
+                - generic [ref=e1150]: "\"Disco com riscos superficiais e espessura abaixo do mínimo recomendado.\""
+                - button "1 foto" [ref=e1151] [cursor=pointer]
+              - generic [ref=e1157]:
+                - generic [ref=e1158]: Orçamento do item
+                - generic [ref=e1159]:
+                  - generic [ref=e1160]:
+                    - generic [ref=e1161]: Retífica de Disco
+                    - generic [ref=e1162]: R$ 80
+                  - generic [ref=e1163]:
+                    - generic [ref=e1164]: Retífica + Rebalanceamento · 45min
+                    - generic [ref=e1165]: R$ 120
+                  - generic [ref=e1166]:
+                    - generic [ref=e1167]: Total
+                    - generic [ref=e1168]: R$ 200
+              - button "O que acontece se não realizar?" [ref=e1170] [cursor=pointer]
+              - generic [ref=e1175]:
+                - button "✓ Aprovar" [ref=e1176] [cursor=pointer]
+                - button "✕ Recusar" [ref=e1177] [cursor=pointer]
+            - generic [ref=e1178]:
+              - generic [ref=e1179]:
+                - generic [ref=e1180]:
+                  - generic [ref=e1181]: Filtro de Ar
+                  - generic [ref=e1182]: ATENÇÃO
+                - generic [ref=e1183]: → Troca recomendada
+                - generic [ref=e1184]: Redução de desempenho e aumento de consumo
+              - generic [ref=e1185]:
+                - generic [ref=e1186]: Observação do mecânico
+                - generic [ref=e1187]: "\"Filtro saturado. Fluxo de ar abaixo do ideal detectado na inspeção.\""
+                - button "1 foto" [ref=e1188] [cursor=pointer]
+              - generic [ref=e1194]:
+                - generic [ref=e1195]: Orçamento do item
+                - generic [ref=e1196]:
+                  - generic [ref=e1197]:
+                    - generic [ref=e1198]: Filtro de Ar Mann Filter
+                    - generic [ref=e1199]: R$ 55
+                  - generic [ref=e1200]:
+                    - generic [ref=e1201]: Substituição de Filtro de Ar · 15min
+                    - generic [ref=e1202]: R$ 35
+                  - generic [ref=e1203]:
+                    - generic [ref=e1204]: Total
+                    - generic [ref=e1205]: R$ 90
+              - button "O que acontece se não realizar?" [ref=e1207] [cursor=pointer]
+              - generic [ref=e1212]:
+                - button "✓ Aprovar" [ref=e1213] [cursor=pointer]
+                - button "✕ Recusar" [ref=e1214] [cursor=pointer]
+            - generic [ref=e1215]:
+              - generic [ref=e1216]:
+                - generic [ref=e1217]:
+                  - generic [ref=e1218]: Fluido de Freio
+                  - generic [ref=e1219]: ATENÇÃO
+                - generic [ref=e1220]: → Substituição recomendada
+                - generic [ref=e1221]: Eficiência reduzida do sistema de freios
+              - generic [ref=e1222]:
+                - generic [ref=e1223]: Observação do mecânico
+                - generic [ref=e1224]: "\"Nível abaixo do mínimo e fluido com índice de umidade elevado.\""
+              - generic [ref=e1225]:
+                - generic [ref=e1226]: Orçamento do item
+                - generic [ref=e1227]:
+                  - generic [ref=e1228]:
+                    - generic [ref=e1229]: Fluido de Freio DOT 4 500ml
+                    - generic [ref=e1230]: R$ 35
+                  - generic [ref=e1231]:
+                    - generic [ref=e1232]: Sangria e troca de fluido · 20min
+                    - generic [ref=e1233]: R$ 30
+                  - generic [ref=e1234]:
+                    - generic [ref=e1235]: Total
+                    - generic [ref=e1236]: R$ 65
+              - button "O que acontece se não realizar?" [ref=e1238] [cursor=pointer]
+              - generic [ref=e1243]:
+                - button "✓ Aprovar" [ref=e1244] [cursor=pointer]
+                - button "✕ Recusar" [ref=e1245] [cursor=pointer]

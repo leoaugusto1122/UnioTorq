@@ -1,0 +1,192 @@
+---
+brainstorm_session_outcomes:
+  session_id: "2026-07-16-arquitetura-3-camadas"
+  date: "2026-07-16"
+  facilitator: "@aiox-master (Orion, atuando como @brainstorm)"
+  documented_at: "2026-07-16T16:32:20-03:00"
+
+  metadata:
+    title: "Arquitetura de IA em 3 Camadas + Funcionários Digitais"
+    scope: "Research-Only"
+    approved_scope: "Research-Only"
+    human: "Leonardo"
+
+  epics_created: []   # Nenhum epic criado nesta fase — decisão de arquitetura, debate em aberto.
+
+  stories_created: []  # Nenhuma story criada — aguarda retomada do debate + specification (@pm).
+
+  features_identified:
+    - id: "F-001"
+      name: "Motor de Regras (Camada 1)"
+      description: |
+        Camada determinística de custo zero para fatos e cálculos (óleo vencido,
+        KM, item recusado, estoque, status OS, financeiro, comissão).
+      user_benefit: |
+        - Respostas em milissegundos
+        - Confiabilidade (cálculo/estoque/financeiro nunca probabilístico)
+      acceptance_criteria:
+        - "Fatos e cálculos resolvidos sem nenhuma chamada de LLM"
+      scope: "MVP"
+      priority: "HIGH"
+      technical_complexity: "MEDIUM"
+      dependencies: []
+      created_from_brainstorm:
+        session_id: "2026-07-16-arquitetura-3-camadas"
+        decision_id: "DEC-001"
+
+    - id: "F-002"
+      name: "Motor de Automação (Camada 2)"
+      description: |
+        Workflows disparados por evento, sem IA (evento -> tarefa -> fila;
+        aprovou -> libera execução -> avisa mecânico).
+      user_benefit:
+        - "Fluxos operacionais automáticos sem custo de IA"
+      acceptance_criteria:
+        - "Gatilhos e réguas executam sem chamada de LLM"
+      scope: "MVP"
+      priority: "HIGH"
+      technical_complexity: "MEDIUM"
+      dependencies: ["F-001"]
+      created_from_brainstorm:
+        session_id: "2026-07-16-arquitetura-3-camadas"
+        decision_id: "DEC-001"
+
+    - id: "F-003"
+      name: "Roteador de Eventos Declarativo (o portão de camada)"
+      description: |
+        Tabela declarativa por tipo de evento que decide Camada 1/2/3. Custo zero.
+        NUNCA uma chamada de LLM (cláusula 2 do ADR-001).
+      user_benefit:
+        - "Garante que a IA só é chamada quando agrega valor"
+      acceptance_criteria:
+        - "Decisão de camada é regra declarativa, auditável, sem LLM"
+      scope: "MVP"
+      priority: "HIGH"
+      technical_complexity: "MEDIUM"
+      dependencies: ["F-001"]
+      created_from_brainstorm:
+        session_id: "2026-07-16-arquitetura-3-camadas"
+        decision_id: "DEC-001"
+
+    - id: "F-004"
+      name: "Orquestrador de IA com roteamento por skill (Camada 3)"
+      description: |
+        Modelo forte só para conversa com cliente e Gestor; modelo barato para
+        classificação/estruturação (mantém doc 15 §3a). NÃO um modelo único.
+      user_benefit:
+        - "Qualidade onde importa, custo baixo no resto"
+      acceptance_criteria:
+        - "Cada skill roteia para o modelo configurado no admin"
+        - "Uso de IA medido e registrado por tenant/agente/modelo"
+      scope: "MVP"
+      priority: "HIGH"
+      technical_complexity: "HIGH"
+      dependencies: ["F-003"]
+      created_from_brainstorm:
+        session_id: "2026-07-16-arquitetura-3-camadas"
+        decision_id: "DEC-001"
+
+    - id: "F-005"
+      name: "Base de Conhecimento Técnica (ativo defensável)"
+      description: |
+        Base própria fabricante x modelo x motor (óleo, litragem, filtros, torque,
+        tempário, recalls/TSB). Consulta estruturada, não busca genérica.
+      user_benefit:
+        - "Mata os '3 apps abertos no balcão'; padroniza mão de obra"
+      acceptance_criteria:
+        - "Placa -> especificação técnica a partir de base própria"
+      scope: "FUTURE"   # Fase 3 (doc 05)
+      priority: "MEDIUM"
+      technical_complexity: "HIGH"
+      dependencies: []
+      created_from_brainstorm:
+        session_id: "2026-07-16-arquitetura-3-camadas"
+        decision_id: "DEC-002"
+
+  risks_identified:
+    - id: "RISK-001"
+      description: "IA usada como lógica de negócio (vazamento para Camada 3)"
+      severity: "HIGH"
+      probability: "MEDIUM"
+      impact:
+        - "Custo de IA estoura a margem da mensalidade"
+        - "Latência e comportamento probabilístico em decisões que deveriam ser determinísticas"
+      mitigation_strategy: |
+        - Regra de ouro documentada (doc 17)
+        - Revisão da classificação Nível 1/2/3 por feature na specification
+      owner: "@architect"
+      status: "MONITORING"
+    - id: "RISK-002"
+      description: "Regressão para 'um modelo único' por simplicidade"
+      severity: "MEDIUM"
+      probability: "MEDIUM"
+      impact:
+        - "Desperdício de custo ou perda de qualidade"
+      mitigation_strategy: |
+        - Cláusula 1 do ADR-001; roteamento por skill mantido (doc 15 §3a)
+      owner: "@architect"
+      status: "MONITORING"
+    - id: "RISK-003"
+      description: "Hipótese econômica (custo de IA baixo) não validada com números"
+      severity: "MEDIUM"
+      probability: "MEDIUM"
+      impact:
+        - "Precificação da mensalidade sem base de custo real"
+      mitigation_strategy: |
+        - Métrica: custo de IA como % da receita por tenant (meta < 10-15%)
+        - Cruzar com doc 10 no plano piloto
+      owner: "@analyst"
+      status: "NEW"
+
+  assumptions_made:
+    - assumption: "A maior parte dos eventos operacionais é resolvível por regra/SQL"
+      validated_by: ["@architect"]
+      validation_status: "NEEDS_VALIDATION"
+    - assumption: "Os 8 papéis de doc 05 cobrem os objetivos comerciais atuais"
+      validated_by: ["@pm", "@po"]
+      validation_status: "VALIDATED"
+
+  deliverables:
+    artifacts_created:
+      - type: "adr"
+        path: "docs/adr/ADR-001-arquitetura-3-camadas.md"
+        status: "created"
+      - type: "doc"
+        path: "docs/17-funcionarios-digitais.md"
+        status: "created"
+      - type: "session"
+        path: ".aiox/brainstorm-sessions/2026-07-16-arquitetura-3-camadas/SESSION.md"
+        status: "created"
+    artifacts_pending:
+      - type: "doc-patch"
+        path: "docs/06-arquitetura-e-integracoes.md"
+        status: "pending"
+      - type: "doc-patch"
+        path: "docs/15-arquitetura-ia-e-admin.md"
+        status: "pending"
+
+  next_phase:
+    phase: "debate (humano) -> specification"
+    responsible_agent: "Orion (debate) / @pm (specification)"
+    handoff_timestamp: "2026-07-16T16:32:20-03:00"
+    handoff_notes: |
+      - O humano pediu explicitamente para RETOMAR O DEBATE após a documentação.
+      - Não avançar para stories sem essa retomada.
+      - Pontos quentes: (a) 'por objetivo' vs portfólio por papel; (b) desenho concreto
+        do roteador de eventos; (c) validação numérica custo de IA vs receita (doc 10).
+
+  session_statistics:
+    total_decisions_made: "3"
+    features_identified: "5"
+    stories_created: "0"
+    epics_created: "0"
+    risks_identified: "3"
+    duration_minutes: "n/a"
+    conversation_turns: "n/a"
+
+  success_metrics:
+    definition_clarity: "HIGH"
+    stakeholder_alignment: "FULL"
+    technical_feasibility: "CONFIRMED"
+    market_validation: "MODERATE"
+    recommended_action: "PROCEED"

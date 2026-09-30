@@ -1,0 +1,78 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: U
+        - generic [ref=e9]: Unio Oficina
+      - button "Recolher menu" [ref=e10] [cursor=pointer]
+    - navigation [ref=e13]:
+      - generic [ref=e14]: Operação
+      - button "Kanban" [ref=e15] [cursor=pointer]
+      - button "Exceções" [ref=e22] [cursor=pointer]
+      - button "Atendimentos" [ref=e26] [cursor=pointer]
+      - generic [ref=e30]: Gestão
+      - button "Dashboard" [ref=e31] [cursor=pointer]
+      - button "Painel TV" [ref=e34] [cursor=pointer]
+      - generic [ref=e38]: Cadastros
+      - button "Clientes" [ref=e39] [cursor=pointer]
+      - button "Veículos" [ref=e46] [cursor=pointer]
+      - generic [ref=e52]: IA
+      - button "Agente WhatsApp" [ref=e53] [cursor=pointer]
+      - generic [ref=e57]: Mobile
+      - button "Checklist" [active] [ref=e58] [cursor=pointer]
+      - button "Portal Cliente" [ref=e64] [cursor=pointer]
+      - button "Aprov. Digital" [ref=e69] [cursor=pointer]
+      - button "Configurações" [ref=e75] [cursor=pointer]
+  - generic [ref=e1246]:
+    - generic [ref=e1249]:
+      - generic [ref=e1250]: Checklist
+      - generic [ref=e1252]: Inspeção Operacional
+    - generic [ref=e1254]:
+      - generic [ref=e1255]: Mecânico · Iniciar inspeção
+      - generic [ref=e1256]:
+        - generic [ref=e1257]:
+          - generic [ref=e1258]: 09:41
+          - generic [ref=e1259]:
+            - generic [ref=e1260]: ▐▐▐▐
+            - generic [ref=e1261]: WiFi
+            - generic [ref=e1262]: 🔋
+        - generic [ref=e1264]:
+          - generic [ref=e1265]:
+            - generic [ref=e1266]: Inspeção
+            - button "Offline" [ref=e1268] [cursor=pointer]
+          - generic [ref=e1270]: Modo offline — dados salvos localmente
+          - generic [ref=e1273]:
+            - generic [ref=e1274]:
+              - generic [ref=e1275]:
+                - generic [ref=e1276]:
+                  - generic [ref=e1277]: BR
+                  - generic [ref=e1279]: XYZ-9876
+                - generic [ref=e1280]: Em Execução
+              - generic [ref=e1282]: Jeep Compass 2022
+              - generic [ref=e1283]: Pedro Alves · 28.300 km
+              - generic [ref=e1284]:
+                - generic [ref=e1285]:
+                  - generic [ref=e1286]: Box
+                  - generic [ref=e1287]: BOX 1
+                - generic [ref=e1288]:
+                  - generic [ref=e1289]: Serviço
+                  - generic [ref=e1290]: Troca Pastilha de…
+                - generic [ref=e1291]:
+                  - generic [ref=e1292]: Mecânico
+                  - generic [ref=e1293]: Carlos
+                - generic [ref=e1294]:
+                  - generic [ref=e1295]: OS
+                  - generic [ref=e1296]: OS-2024-0891
+            - generic [ref=e1297]:
+              - generic [ref=e1298]: Checklist
+              - generic [ref=e1299]:
+                - generic [ref=e1300]: Freios (4)
+                - generic [ref=e1302]: Motor (4)
+                - generic [ref=e1304]: Suspensão (3)
+              - generic [ref=e1306]: 11 itens no total
+            - generic [ref=e1307]:
+              - button [ref=e1308] [cursor=pointer]
+              - generic [ref=e1311]:
+                - generic [ref=e1312]: 01:32:45
+                - generic [ref=e1313]: Pausado
+          - button "INICIAR INSPEÇÃO →" [ref=e1315] [cursor=pointer]

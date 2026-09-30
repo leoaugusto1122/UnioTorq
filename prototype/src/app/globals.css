@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* dark mode via classe .dark (usado nos painéis de parede) */
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   Design System UnioTorq (doc 01 §5)
+   Inter + IBM Plex Mono · roxo #4C3FA5 · neutros Tailwind
+   Semânticos: ok(verde) warn(âmbar) danger(vermelho) info(azul)
+   ============================================================ */
+:root {
+  --radius: 0.5rem;
+
+  /* neutros / superfícies (light) */
+  --background: #f9fafb;          /* gray-50 — fundo do app */
+  --foreground: #111827;          /* gray-900 */
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+
+  /* marca */
+  --primary: #4c3fa5;             /* roxo Unio */
+  --primary-foreground: #ffffff;
+
+  --secondary: #f3f4f6;           /* gray-100 */
+  --secondary-foreground: #1f2937;
+
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;    /* gray-500 */
+
+  --accent: #eeebfa;              /* brand tint */
+  --accent-foreground: #4c3fa5;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e5e7eb;              /* gray-200 */
+  --input: #e5e7eb;
+  --ring: #4c3fa5;
+
+  /* semânticos UnioTorq (badges/estados) */
+  --ok: #10b981;        --ok-tint: #d1fae5;
+  --warn: #f59e0b;      --warn-tint: #fef3c7;
+  --danger: #ef4444;    --danger-tint: #fee2e2;
+  --info: #3b82f6;      --info-tint: #dbeafe;
+  --brand: #4c3fa5;     --brand-tint: #eeebfa;
+
+  /* WhatsApp (tela da Nina) */
+  --wa-header: #075e54;
+  --wa-bg: #efeae2;
+  --wa-out: #d9fdd3;
+  --wa-in: #ffffff;
+  --wa-tick: #53bdeb;
+}
+
+/* dark — painéis de parede (Mecânico, TV Cliente) */
+.dark {
+  --background: #0b0f17;
+  --foreground: #e5e7eb;
+  --card: #111827;                /* gray-900 */
+  --card-foreground: #e5e7eb;
+  --popover: #111827;
+  --popover-foreground: #e5e7eb;
+
+  --primary: #a89cff;             /* roxo clareado p/ contraste */
+  --primary-foreground: #0b0f17;
+
+  --secondary: #1f2937;
+  --secondary-foreground: #e5e7eb;
+
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af;
+
+  --accent: #2a2550;
+  --accent-foreground: #d7d0ff;
+
+  --destructive: #f87171;
+  --destructive-foreground: #0b0f17;
+
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #a89cff;
+
+  --ok: #34d399;        --ok-tint: #06371f;
+  --warn: #fbbf24;      --warn-tint: #3a2c05;
+  --danger: #f87171;    --danger-tint: #3a0d0d;
+  --info: #60a5fa;      --info-tint: #0b2545;
+  --brand: #a89cff;     --brand-tint: #2a2550;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ok: var(--ok);
+  --color-ok-tint: var(--ok-tint);
+  --color-warn: var(--warn);
+  --color-warn-tint: var(--warn-tint);
+  --color-danger: var(--danger);
+  --color-danger-tint: var(--danger-tint);
+  --color-info: var(--info);
+  --color-info-tint: var(--info-tint);
+  --color-brand: var(--brand);
+  --color-brand-tint: var(--brand-tint);
+
+  --color-wa-header: var(--wa-header);
+  --color-wa-bg: var(--wa-bg);
+  --color-wa-out: var(--wa-out);
+  --color-wa-in: var(--wa-in);
+  --color-wa-tick: var(--wa-tick);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), "Fira Code", ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* placa e valores técnicos */
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+}
+
+/* indicador "digitando…" do WhatsApp — pulse suave (sem bounce datado) */
+@keyframes wa-typing {
+  0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-3px); }
+}
+.wa-dot {
+  animation: wa-typing 1.2s ease-in-out infinite;
+}
